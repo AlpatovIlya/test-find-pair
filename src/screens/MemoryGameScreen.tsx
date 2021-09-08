@@ -112,8 +112,14 @@ const cards: MemoryCardType[] = [
 ];
 // #endregion
 
+const shuffle = (array: any[]) => {
+  return [...array].sort(() => Math.random() - 0.5);
+};
 
-const currentCards: MemoryCardType[] = [...cards, ...cards];
+
+const currentCards: MemoryCardType[] = shuffle([...cards, ...cards]);
+
+
 let interval: NodeJS.Timer;
 let dateTimeStart: Date;
 
