@@ -1,6 +1,5 @@
 import React, {FC} from 'react';
-import {View, ViewStyle} from 'react-native';
-import {TextInput} from 'react-native-gesture-handler';
+import {TextInput, View, ViewStyle} from 'react-native';
 import styled from 'styled-components';
 
 type Props = {

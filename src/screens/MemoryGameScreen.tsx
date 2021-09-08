@@ -142,7 +142,7 @@ const MemoryGameScreen: FC<Props> = ({navigation}) => {
     setTimeout(() => {
       setFirstActiveItem(null);
       setSecondActiveItem(null);
-    }, 1 * 500);
+    }, 500);
   };
 
   const handleCards = () => {
@@ -201,7 +201,7 @@ const MemoryGameScreen: FC<Props> = ({navigation}) => {
       setFirstActiveItem(null);
       setSecondActiveItem(null);
       setMemoryCards([]);
-      Alert.alert('Вы выйграли!');
+      Alert.alert('Вы выиграли!');
       addToRaiting();
       navigation.goBack();
     }
